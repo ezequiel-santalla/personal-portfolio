@@ -1,0 +1,157 @@
+---
+const { sideBarActiveItemID } = Astro.props;
+const activeClass = "bg-base-300"; // For primary color replace with `active` class
+---
+
+<ul class="menu shrink menu-md overflow-y-auto">
+  <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
+  <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li>
+  <li>
+    <a
+      class="py-3 text-base"
+      href="mailto:ezequielasantalla@gmail.com"
+      target="_blank"
+      referrerpolicy="no-referrer-when-downgrade">Contact</a
+    >
+  </li>
+</ul>
+
+<b><p class="ps-6 py-11 text-base">Technologies</p></b>
+
+<div class="flex flex-wrap justify-items-center">
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+        alt="html5"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+        alt="css3"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+        alt="git"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original-wordmark.svg"
+        alt="bootstrap"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
+        alt="bootstrap"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+        alt="sass"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+        alt="javascript"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        alt="logo"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+        alt="Node.js"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/handlebars/handlebars-original.svg"
+        alt="Node.js"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://www.mongodb.com/es" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+        alt="Node.js"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+  <div class="flex justify-center w-1/4 p-2">
+    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+      <img
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+        alt="Node.js"
+        width="40"
+        height="40"
+      />
+    </a>
+  </div>
+</div>
+
+<script
+  define:vars={{
+    sideBarActiveItemID: sideBarActiveItemID,
+    activeClass: activeClass,
+  }}
+>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
+</script>

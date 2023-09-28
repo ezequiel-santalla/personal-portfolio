@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm Ezequiel Santalla, a 24-year-old from Mar del Plata, Argentina. I'm
+    passionate about programming and currently studying Tecnicatura
+    Universitaria en Programacion at UTN (Universidad Tecnológica Nacional). My
+    goal is to create innovative solutions through code, driven by curiosity and
+    a love for technology.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Freelance React Developer"
+      subtitle="From 09/23 to 11/23 at Gac Store, Córdoba, Argentina"
+    >
+      As a React Developer at Gac Store, I merged technology and artistry on our
+      website, showcasing laser engraving intricacies, 3D printing's creativity,
+      and 3D scanning's transformative potential. Collaborating with the design
+      team, we crafted a visually captivating, user-friendly platform that
+      echoed Gac Store's innovation. Through React, I created dynamic elements
+      to guide users through our technologies, making my time at Gac Store a
+      journey of innovation and creativity.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Accounting Assistant"
+      subtitle="From 06/23 to 08/23 at Grupo Núcleo, Mar del Plata, Argentina"
+    >
+      At Grupo Núcleo, as an Accounting Assistant, my role encompassed various
+      administrative and accounting tasks, including bank reconciliations and
+      accounting adjustments. I played a crucial part in maintaining financial
+      accuracy and efficiency within the company, working closely with the
+      accounting team to ensure the books were in order.
+    </TimeLineElement>
+    <TimeLineElement
+      title="University Internship"
+      subtitle="From 08/22 to 12/22 at University of Tulsa, OK, United States"
+    >
+      During my university internship at the University of Tulsa, I managed the
+      university's $8 million investment portfolio as part of the management
+      team. My responsibilities included analyzing different sectors and
+      gathering weekly data to support our investment decisions. This experience
+      enhanced my understanding of investment strategies and risk assessment,
+      while also improving my analytical skills. Working at the University of
+      Tulsa was a highly rewarding experience that has greatly enriched my
+      academic and professional growth.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Técnico Universitario en Programación"
+      subtitle="2024 to 2025 at UTN, Mar del Plata, Argentina"
+    />
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="Bachelor of Business Administration with major in Finance"
+        subtitle="2019 to 2023 at University of Tulsa, OK, United States"
+      />
+      <TimeLineElement
+        title="Bachelor of Business Administration with major in Management"
+        subtitle="2019 to 2023 at University of Tulsa, OK, United States"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Certifications</div>
+    </div>
+
+    <div class="flex flex-wrap justify-center mb-10 gap-10">
+      <a href="https://www.coderhouse.com/certificados/633e4dac6ebea6000f8d3679?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/web_dev_certificate.png" alt="Web Development Certificate CoderHouse" class="w-full">
+      </a>
+      <a href="https://www.coderhouse.com/certificados/63e96ac03a2f13000e5a677d?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/javascript_certificate.png" alt="JavaScript Certificate CoderHouse" class="w-full">
+      </a>
+      <a href="https://www.coderhouse.com/certificados/64d3e005a83b96911c4f21f9?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/react_certificate.png" alt="React JS Certificate CoderHouse" class="w-full">
+      </a>
+      <a href="https://www.coderhouse.com/certificados/64d3e005a83b967edb4f21fb?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/frontend_certificate.png" alt="Frontend Career Certificate CoderHouse" class="w-full">
+      </a>
+      <a href="https://www.coderhouse.com/certificados/64d3e005a83b96911c4f21f9?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/react_certificate.png" alt="React JS Certificate CoderHouse" class="w-full">
+      </a>
+      <a href="https://www.coderhouse.com/certificados/64d3e005a83b96911c4f21f9?lang=en" target="_blank" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+        <img src="/react_certificate.png" alt="React JS Certificate CoderHouse" class="w-full">
+      </a>
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+      <li>Native (Native)</li>
+      <li>English (C1)</li>
+      <li>French (Beginner)</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Git</li>
+      <li>Bootstrap</li>
+      <li>Tailwind CSS</li>
+      <li>SASS</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Astro</li>
+      <li>Vercel</li>
+      <li>Netlify</li>
+      <li>Node.js</li>
+      <li>Postman</li>
+      <li>Socket.io</li>
+      <li>Handlebars</li>
+      <li>MongoDB</li>
+      <li>Python</li>
+    </ul>
+  </div>
+</BaseLayout>
